@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  color:#aaa;
+  font-weight: bold;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top:50px;
+  transition:0.5s ease-in-out;
+  
+}
+.flex_row{
+  display: table;
+  width:100%;
+}
