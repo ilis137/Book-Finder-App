@@ -21,6 +21,7 @@ const Search = props => {
             onChange={props.onInput}
             onFocus={props.handleFocus}
             onBlur={props.handleFocus}
+            data-testid="search-textbox"
           />
           {props.searchBarFocus ? (
             <ul className={styles.searchSuggestions}>
@@ -43,7 +44,9 @@ const Search = props => {
         <Row>
           <Col s={12}>
             {props.noQueryError ? (
-              <p className={styles.emptyQuery}>{props.noQueryError}</p>
+              <p className={styles.emptyQuery} data-testid="noqueryerror">
+                {props.noQueryError}
+              </p>
             ) : null}
           </Col>
         </Row>
