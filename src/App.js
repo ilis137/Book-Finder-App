@@ -97,6 +97,7 @@ const App = props => {
                     .searchHistory
                 : null
             }
+            data-testid="search-comp"
           />
         </Row>
         <Row className={styles.flex_row}>
