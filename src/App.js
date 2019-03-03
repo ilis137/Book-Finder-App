@@ -95,7 +95,7 @@ const App = props => {
               JSON.parse(localStorage.getItem("searchHistory"))
                 ? JSON.parse(localStorage.getItem("searchHistory"))
                     .searchHistory
-                : null
+                : []
             }
             data-testid="search-comp"
           />
